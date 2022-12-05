@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -112,12 +113,32 @@ header span {
 .exp .experience {
   margin-bottom: 20px;
 }
+.exp .experience p {
+  text-transform: capitalize;
+}
+.exp .experience li {
+  text-transform: lowercase;
+}
+.exp .experience .prev-project {
+  margin: 10px 0;
+}
+.exp .experience .prev-project h4 {
+  text-transform: capitalize;
+}
 .exp .personal-projects {
   margin-bottom: 20px;
 }
 .exp .personal-projects h3 {
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+.exp .project {
+  margin-right: 100px;
+  padding: 10px;
+}
+.exp .project a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .sidebar {
