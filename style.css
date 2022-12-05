@@ -7,48 +7,163 @@
 }
 
 body {
-  background-color: #C0C0C0;
+  background-color: #283949;
 }
 
-.container {
-  margin: 20px 50px;
-}
-
-header h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
-header p {
+
+p {
   padding-top: 5px;
   color: #000000;
+}
+
+main {
+  background-color: #C0C0C0;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-shadow: 2px 1px 3px black;
+}
+
+header {
+  padding: 20px 20px 0 20px;
 }
 header span {
   display: block;
   padding: 10px 0px;
 }
 
-.details ul {
+.urls ul {
+  padding: 5px 20px 5px 20px;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.details ul li {
-  width: 100%;
+.urls ul li {
+  width: 50%;
+  padding-top: 8px;
 }
-.details ul li a {
+.urls ul li a {
   text-decoration: none;
   color: #000000;
 }
-.details ul li a i {
+.urls ul li a i {
   color: #000000;
 }
 
-.details::before,
-.details::after {
+.urls::before,
+.urls::after {
   display: block;
   content: "";
   width: 100%;
   height: 1px;
   background-color: #000000;
-  box-shadow: 1px 1px 3px;
+}
+
+.details {
+  display: flex;
+  padding: 20px;
+}
+
+.exp {
+  width: 70%;
+}
+.exp .education {
+  padding-bottom: 5%;
+}
+.exp .education h2 {
+  text-transform: capitalize;
+  margin: 8px 0;
+}
+.exp .education .graduation {
+  margin-bottom: 20px;
+}
+.exp .education .graduation h3 {
+  text-transform: capitalize;
+  margin: 3px 0;
+}
+.exp .education .graduation h4 {
+  text-transform: capitalize;
+  margin: 3px 0;
+}
+.exp .education .graduation .cgpa {
+  display: flex;
+  gap: 10%;
+}
+.exp .education .graduation .course {
+  padding: 5px 0px;
+}
+.exp .education .schooling h3 {
+  text-transform: capitalize;
+  margin: 3px 0;
+}
+.exp .education .schooling h4 {
+  text-transform: capitalize;
+  margin: 3px 0;
+}
+.exp .education .schooling .cgpa {
+  display: flex;
+  gap: 10%;
+}
+.exp .education .schooling .course {
+  padding: 5px 0px;
+}
+.exp .experience {
+  margin-bottom: 20px;
+}
+.exp .personal-projects {
+  margin-bottom: 20px;
+}
+.exp .personal-projects h3 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.sidebar {
+  width: 30%;
+}
+.sidebar .skills {
+  margin-bottom: 20px;
+}
+.sidebar .skills h3 {
+  text-transform: capitalize;
+}
+.sidebar .skills ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar .skills ul li {
+  padding: 5px;
+  background-color: #1a0000;
+  color: #fff;
+  margin: 3px;
+  border-radius: 10px;
+}
+.sidebar .acivements {
+  margin-bottom: 20px;
+}
+.sidebar .coding-profile {
+  margin-bottom: 20px;
+}
+.sidebar .coding-profile ul {
+  list-style-type: none;
+  padding-top: 5px;
+}
+.sidebar .coding-profile ul li {
+  padding: 5px 0;
+}
+.sidebar .coding-profile ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.sidebar .coursework {
+  margin-bottom: 20px;
+}
+.sidebar .language ul {
+  list-style-type: none;
+}
+.sidebar .language ul li {
+  padding: 5px 0;
 }/*# sourceMappingURL=style.css.map */
